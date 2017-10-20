@@ -18,7 +18,7 @@ phrases_to_say = ['me three thanks', 'me 3 thanks',
 
 
 def run_bot():
-    subreddit = r.subreddit('me_irl')
+    subreddit = r.subreddit('all')
     comments = subreddit.comments(limit=15)
     for comment in comments:
         comment_text = comment.body.lower()
